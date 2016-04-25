@@ -18,7 +18,13 @@ Star Wars Books is a  Drupal Web App for reviewing novels in the Star Wars franc
 2. Download and Install MAMP here: https://www.mamp.info/en/  
 3. Launch MAMP and navigate to Preferences>Web Server then Click the little folder icon and choose the folder you cloned from GitHub earlier.  
 4. Go to localhost:8888/phpMyAdmin in your Browser
-5. Go to the Import tab and import the database file stored in the sites>db_backup within the project directory
+5. Go to the Import tab and import the database file stored in the sites>db_backup within the project directory  
+6. After the Database is imported go to the privileges tab and create a user with the following criteria:
+* Username: book_admin
+* Password: reading
+* Set the Host field to localhost
+* Hit Go!
+7. Now when you visit localhost:8888 everything should show up!
 
 ***
 ## License
