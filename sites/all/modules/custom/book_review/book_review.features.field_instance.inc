@@ -78,7 +78,7 @@ function book_review_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_author',
-    'label' => 'Author',
+    'label' => 'Book Author',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -98,20 +98,23 @@ function book_review_field_default_field_instances() {
   // Exported field_instance: 'node-book_review-field_rating'.
   $field_instances['node-book_review-field_rating'] = array(
     'bundle' => 'book_review',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'null',
+      ),
+    ),
     'deleted' => 0,
-    'description' => 'A rating out of 10.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
+        'module' => 'starrating',
         'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => '',
+          'fill_blank' => 1,
+          'icon_color' => 1,
+          'icon_type' => 'star',
         ),
-        'type' => 'number_integer',
+        'type' => 'starrating_rating_formatter',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -126,25 +129,20 @@ function book_review_field_default_field_instances() {
     'label' => 'Rating',
     'required' => 1,
     'settings' => array(
-      'max' => 10,
-      'min' => 0,
-      'prefix' => '',
-      'suffix' => '/10',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'number',
+      'module' => 'starrating',
       'settings' => array(),
-      'type' => 'number',
+      'type' => 'starrating_rating_widget',
       'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A rating out of 10.');
-  t('Author');
+  t('Book Author');
   t('Rating');
   t('Review Body');
   t('Talk about the book here. Try not to spoil to much. ');

@@ -59,12 +59,18 @@ function book_review_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_rating',
-    'indexes' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
+    'module' => 'starrating',
+    'settings' => array(
+      'max_value' => 5,
+    ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'starrating_rating',
   );
 
   return $field_bases;

@@ -27,6 +27,17 @@ Star Wars Books is a  Drupal Web App for reviewing novels in the Star Wars franc
 7. Now when you visit localhost:8888 everything should show up!
 
 ***
+## Additional Information
+Site Maintenance Info:  
+* Username: admin  
+* Password: Password
+
+Example Review Role Account:  
+* Username: the_review_guy  
+* Password: password  
+
+
+***
 ## License
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)]()  
 Copyright (c) Ben Ronda

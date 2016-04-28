@@ -10,3 +10,4 @@ features[variable][] = site_frontpage
 features[variable][] = site_name
 features[variable][] = site_slogan
 features[variable][] = theme_default
+project path = sites/all/modules/custom
