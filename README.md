@@ -1,11 +1,11 @@
-# Star Wars Books [![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg?maxAge=2592000)]()
+# Galactic Books [![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg?maxAge=2592000)]()
 
 ## An app for reviewing Star Wars novels.
 #### Created by: [Ben Ronda](https://github.com/ben-ronda)
 ***
 ## Description
 
-Star Wars Books is a  Drupal Web App for reviewing novels in the Star Wars franchise.
+Galactic Books is a Drupal Web App for reviewing novels in the Star Wars franchise.
 
 ### Technologies Used
 * Drupal 7
